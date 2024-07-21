@@ -9,7 +9,7 @@ npm install https://github.com/carum98/skyanalytics-vue2.git
 ## Usage
 ```javascript
 import Vue from 'vue'
-import SkyAnalytics from 'skyanalytics-vue2'
+import SkyAnalytics from '@skyanalytics/vue2'
 
 Vue.use(SkyAnalytics, {
     key: 'source_key',
@@ -52,6 +52,6 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    Vue.prototype.$skyAnalytics.navigate(to.name)
+    Vue.prototype.$skyAnalytics.navigation({ name: to.name })
     next()
 })
