@@ -1,0 +1,31 @@
+{
+  "name": "@skyanalytics/vue2",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Carlos Eduardo Umaña Acevedo <cumana3098@gmail.com>",
+  "license": "MIT",
+  "description": "SkyAnalytics Vue-2 is an adapter for [SkyAnalytics]",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carum98/skyanalytics-vue2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carum98/skyanalytics-vue2/issues"
+  },
+  "homepage": "https://github.com/carum98/skyanalytics-vue2.git#readme",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@skyanalytics/js": "github:carum98/skyanalytics-js"
+  },
+  "devDependencies": {
+    "vue": "2.7.16",
+    "typescript": "5.4.5"
+  }
+}
